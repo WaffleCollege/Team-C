@@ -6,8 +6,8 @@ console.log("Hello world!");
 let expected;
 let actual;
 
-
- 
+// test
+  
 //１
    /**
     * @param {Array<number>} ??? - 数値型の要素を持つ配列
