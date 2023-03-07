@@ -31,7 +31,7 @@ app.use(
 //app.use関数で常にログイン状態を確認
 app.use((req, res, next) => {
   if (req.session.userId === undefined) {
-    res.locals.username = "ゲスト";
+    res.locals.username = 'ゲスト';
   } else {
     res.locals.username = req.session.username;
   }
@@ -43,11 +43,15 @@ app.get('/', (req, res) => {
   res.render('hello.ejs');
 });  
 
+//カレンダーページのルーティング設定
+app.get('/main', (req, res) => {
+  res.render('calendar.ejs');
+});
 
-//ユーザー登録画面のルーティング設定
-//app.get('/signup', (req, res) => {
-  //res.render('signup.ejs');
-//});
+//会員登録ページのルーティング設定
+app.get('/signup', (req, res) => {
+  res.render('signup.ejs');
+});
 
 //ログインページのルーティング設定
 app.get('/login', (req, res) => {
@@ -55,7 +59,7 @@ app.get('/login', (req, res) => {
 });
 
 app.post('/login', (req, res) => {
-  const email = req.body.email
+  const email = req.body.email;
   connection.query(
     'SELECT * FROM users WHERE email = ?',
     [email],
@@ -77,16 +81,11 @@ app.post('/login', (req, res) => {
 });
 
 
-//カレンダーページのルーティング設定
-app.get('/main', (req, res) => {
-  res.render('calendar.ejs');
-});
-
-
 //ログアウトするルーティングの設定
 app.get('/logout', (req, res) => {
   req.session.destroy((error) => {
     res.redirect('/main');
   });
 });
+
 app.listen(3000);
