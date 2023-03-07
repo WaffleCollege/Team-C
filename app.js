@@ -31,9 +31,9 @@ app.use(
 //app.use関数で常にログイン状態を確認
 app.use((req, res, next) => {
   if (req.session.userId === undefined) {
-    console.log('ログインしていません');
+    res.locals.username = "ゲスト";
   } else {
-    console.log('ログインしています');
+    res.locals.username = req.session.username;
   }
   next();
 });
@@ -64,6 +64,7 @@ app.post('/login', (req, res) => {
         if (req.body.password === results[0].password){
           // ユーザーIDをセッション情報に保存
           req.session.userId = results[0].id;
+          req.session.username = results[0].username;
           res.redirect('/main');
         } else {
           res.redirect('/login');
@@ -81,4 +82,11 @@ app.get('/main', (req, res) => {
   res.render('calendar.ejs');
 });
 
+
+//ログアウトするルーティングの設定
+app.get('/logout', (req, res) => {
+  req.session.destroy((error) => {
+    res.redirect('/main');
+  });
+});
 app.listen(3000);
