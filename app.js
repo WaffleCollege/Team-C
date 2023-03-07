@@ -2,8 +2,11 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+//express-sessionの読み込み
+const session = require('express-session');
 
 app.use(express.static('public'));
+app.use(express.urlencoded({extended: false}));
 
 //MySQLとの接続
 const mysql = require('mysql');
@@ -25,8 +28,15 @@ connection.connect((err) => {
   console.log('success');
 });
 
+app.use(
+  session({
+    secret: 'my_secret_key',
+    resave: false,
+    saveUninitialized: false,
+  })
+)
 
-//ルーティング設定
+//メインページのルーティング設定
 app.get('/', (req, res) => {
   connection.query(
     'SELECT * FROM users',
@@ -37,11 +47,30 @@ app.get('/', (req, res) => {
   );
 });  
 
-app.get('/top', (req, res) => {
-  res.render('top.ejs');
+//ログインページのルーティング設定
+app.get('/login', (req, res) => {
+  res.render('login.ejs');
 });
 
+app.post('/login', (req, res) => {
+  const email = req.body.email
+  connection.query(
+    'SELECT * FROM users WHERE email = ?',
+    [email],
+    (error, results) => {
+      if(results.length > 0) {
+        if (req.body.password === results[0].password){
+          // ユーザーIDをセッション情報に保存
+          req.session.userId = results[0].id;
+          res.redirect('/');
+        } else {
+          res.redirect('/login');
+        }
+      } else {
+        res.redirect('/login');
+      }
+    }
+  );
+});
 
 app.listen(3000);
-
-//test
