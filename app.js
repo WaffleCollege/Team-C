@@ -7,9 +7,9 @@ const port = 3000;
 //express-sessionの読み込み
 const session = require('express-session');
 
-
-
+//cssファイルが入っているpublicフォルダの読み込み
 app.use(express.static('public'));
+
 app.use(express.urlencoded({extended: false}));
 
 //MySQLの接続情報
