@@ -36,14 +36,6 @@ app.use(
   })
 );
 
-app.use((req, res, next) => {
-  if (req.session.userId === undefined) {
-    console.log('ログインしていません');
-  } else {
-    console.log('ログインしています');
-  }
-  next();
-});
 
 //メインページのルーティング設定
 app.get('/', (req, res) => {
