@@ -34,7 +34,16 @@ app.use(
     resave: false,
     saveUninitialized: false,
   })
-)
+);
+
+app.use((req, res, next) => {
+  if (req.session.userId === undefined) {
+    console.log('ログインしていません');
+  } else {
+    console.log('ログインしています');
+  }
+  next();
+});
 
 //メインページのルーティング設定
 app.get('/', (req, res) => {
@@ -46,6 +55,11 @@ app.get('/', (req, res) => {
     }
   );
 });  
+
+//ユーザー登録画面のルーティング設定
+app.get('/signup', (req, res) => {
+  res.render('signup.ejs');
+});
 
 //ログインページのルーティング設定
 app.get('/login', (req, res) => {
