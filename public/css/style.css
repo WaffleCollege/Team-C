@@ -2,13 +2,14 @@
 
 /*全体*/
 .wrapper{
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
-    color: #666;
+    color: #064025;
+    background-color: #A7D9D0;
 }
 #header {
     text-align: center;
-    font-size: 24px;
+    font-size: 26px;
     width: 100%;
     margin: 1rem 0 0;
 }
@@ -17,28 +18,36 @@
 #calendar {
     text-align: center;
     width: 100%;
+    background-color: #F2F1E9;
 }
 table {
     outline: 2px solid #ddd;
     border-collapse: collapse;
     width: 100%;
+    height: 425px;
 }
 th {
-    color: #000;
-}
-th, td {
+    color: #064025;
     outline: 1px solid #ddd;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
 }
+td {
+    outline: 1px solid #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-align: left;
+    vertical-align: top;
+}
 /*日曜日*/
 td:first-child {
-    color: red;
+    color: #D11C2C;
 }
 /*土曜日*/
 td:last-child {
-    color: blue;
+    color: #4682B4;
 }
 /*前後月の日付*/
 td.disabled {
@@ -46,7 +55,7 @@ td.disabled {
 }
 /*本日*/
 td.today {
-    background-color: #D65E72;
+    background-color: #A7D9D0;
     color: #fff;
 }
 
@@ -56,9 +65,9 @@ td.today {
 }
 #next-prev-button button{
     cursor: pointer;
-    background: #B78D4A;
+    background: #064025;
     color: #fff;
-    border: 1px solid #B78D4A;
+    border: 1px solid #064025;
     border-radius: 4px;
     font-size: 1rem;
     padding: 0.5rem 2rem;
