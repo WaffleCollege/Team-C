@@ -104,59 +104,36 @@ td.today {
 .title{
   font-family: "sans-serif";
   text-decoration: none;
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #F2F1E9;
+}
+
+/*メッセージ*/
+.message{
+  font-size: 18px;
 }
 
 /*リスト*/
 li{
   list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.btn--login,
-a.btn--login {
-  color: #fff;
+ul{
+  display: flex;
+}
+
+/*ヘッダー*/
+.header{
   background-color: #064025;
-  text-decoration: none;
 }
 
-.btn--login:hover,
-a.btn--login:hover {
-  color: #fff;
-  background: #064025;
-}
 
-a.btn--radius {
-   border-radius: 100vh;
-}
-
-.btn--logout,
-a.btn--logout {
-  color: #fff;
-  background-color: #064025;
-  text-decoration: none;
-}
-.btn--logout:hover,
-a.btn--logout:hover {
-  color: #fff;
-  background: #064025;
-}
-
-a.btn--radius {
-   border-radius: 100vh;
-}
-
-.btn--signup,
-a.btn--signup {
-  color: #fff;
-  background-color: #064025;
-  text-decoration: none;
-}
-.btn--signup:hover,
-a.btn--signup:hover {
-  color: #fff;
-  background: #064025;
-}
-
-a.btn--radius {
-   border-radius: 100vh;
+/*ボディー*/
+body{
+  margin: 0px;
 }
