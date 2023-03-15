@@ -84,16 +84,18 @@ function createProcess(year, month) {
 }
     </script>
   </head>
-  
+
   <body>
     <header>
       <div class="header">
-        <a href="/" class="title">Period Checker</a>
-        <ul>
-          <li><a href="/login" class="btn btn--login btn--radius">ログイン</a></li>
-          <li><a href="/louout" class="btn btn--logout btn--radius">ログアウト</a></li>
-          <li><a href="/signup" class="btn btn--signup btn--radius">新規登録</a></li>
-        </ul>
+        <a href="/" class="header-logo">Period Checker</a>
+        <div class="header-list">
+          <ul>
+            <li><a href="/login" class="btn btn--login btn--radius" id="login">ログイン</a></li>
+            <li><a href="/louout" class="btn btn--logout btn--radius" id="logout">ログアウト</a></li>
+            <li><a href="/signup" class="btn btn--signup btn--radius" id="signup">新規登録</a></li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -105,10 +107,10 @@ function createProcess(year, month) {
       <div class="record">
         <p>かんたん記録</p>
         <div class="easy-record">
-          <button class="btn btn--orange btn--radius" id="end" type="button">終了</button>
           <button class="btn btn--orange btn--radius" id="start" type="button">開始</button>
-          <button class="btn btn--orange btn--radius" id="share" type="button">シェア</button>
+          <button class="btn btn--orange btn--radius" id="end" type="button">終了</button>
           <button class="btn btn--orange btn--radius" id="physical-condition-record" type="button">体調記録</button>
+          <button class="btn btn--orange btn--radius" id="share" type="button">シェア</button>
         </div>
       </div>
     </div>
