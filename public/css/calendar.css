@@ -82,8 +82,8 @@ td.today {
     border-style: solid;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
-    border-left: 30px solid red;
-    border-right: 0;
+    border-right: 30px solid #064025;
+    border-left: 0;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -98,4 +98,79 @@ td.today {
 }
 #next {
     float: right;
+}
+
+/*タイトル*/
+.title{
+  font-family: "sans-serif";
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+  color: #A7D9D0;
+}
+
+/*メッセージ*/
+.message{
+  font-size: 18px;
+}
+
+/*リスト*/
+li{
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+ul{
+  display: flex;
+}
+
+/*ヘッダー*/
+.header{
+  background-color: #064025;
+}
+
+
+/*ボディー*/
+body{
+  margin: 0px;
+  background-color: #A7D9D0;
+}
+
+.function{
+    display: flex;
+}
+
+#start{
+  background-color: #79A637;
+}
+#end{
+  background-color: #79A637;
+}
+#physical-condition-record{
+  background-color: #5190a4;
+}
+#share{
+  background-color: #5190a4;
+}
+
+.btn{
+    width: 50%;
+}
+
+.btn--orange {
+  color: #fff;
+  border: none;
+  float:right;
+}
+.btn--radius {
+   border-radius: 100vh;
+}
+
+.easy-record{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
 }
