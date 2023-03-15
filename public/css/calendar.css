@@ -99,3 +99,64 @@ td.today {
 #next {
     float: right;
 }
+
+/*タイトル*/
+.title{
+  font-family: "sans-serif";
+  text-decoration: none;
+  font-size: 50px;
+}
+
+/*リスト*/
+li{
+  list-style: none;
+}
+
+.btn--login,
+a.btn--login {
+  color: #fff;
+  background-color: #064025;
+  text-decoration: none;
+}
+
+.btn--login:hover,
+a.btn--login:hover {
+  color: #fff;
+  background: #064025;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}
+
+.btn--logout,
+a.btn--logout {
+  color: #fff;
+  background-color: #064025;
+  text-decoration: none;
+}
+.btn--logout:hover,
+a.btn--logout:hover {
+  color: #fff;
+  background: #064025;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}
+
+.btn--signup,
+a.btn--signup {
+  color: #fff;
+  background-color: #064025;
+  text-decoration: none;
+}
+.btn--signup:hover,
+a.btn--signup:hover {
+  color: #fff;
+  background: #064025;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}
