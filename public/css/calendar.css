@@ -106,7 +106,7 @@ td.today {
   text-decoration: none;
   font-size: 40px;
   font-weight: bold;
-  color: #F2F1E9;
+  color: #A7D9D0;
 }
 
 /*メッセージ*/
@@ -136,4 +136,41 @@ ul{
 /*ボディー*/
 body{
   margin: 0px;
+  background-color: #A7D9D0;
+}
+
+.function{
+    display: flex;
+}
+
+#start{
+  background-color: #79A637;
+}
+#end{
+  background-color: #79A637;
+}
+#physical-condition-record{
+  background-color: #5190a4;
+}
+#share{
+  background-color: #5190a4;
+}
+
+.btn{
+    width: 50%;
+}
+
+.btn--orange {
+  color: #fff;
+  border: none;
+  float:right;
+}
+.btn--radius {
+   border-radius: 100vh;
+}
+
+.easy-record{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
 }
