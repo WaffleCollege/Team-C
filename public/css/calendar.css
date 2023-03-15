@@ -100,15 +100,6 @@ td.today {
     float: right;
 }
 
-/*タイトル*/
-.title{
-  font-family: "sans-serif";
-  text-decoration: none;
-  font-size: 40px;
-  font-weight: bold;
-  color: #A7D9D0;
-}
-
 /*メッセージ*/
 .message{
   font-size: 18px;
@@ -130,8 +121,39 @@ ul{
 /*ヘッダー*/
 .header{
   background-color: #064025;
+  display: flex;
+  height: 70px;
+  padding-top: 10px;
 }
 
+.header-list{
+  margin-left: 700px;
+  margin-top: -15px;
+}
+
+#login{
+  text-decoration: none;
+  color: #F2F1E9;
+}
+#logout{
+  text-decoration: none;
+  color: #F2F1E9;
+}
+#signup{
+  text-decoration: none;
+  color: #F2F1E9;
+}
+
+/*ヘッダーロゴ*/
+.header-logo{
+    font-family: "sans-serif";
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    color: #A7D9D0;
+    float: left;
+    padding-left: 20px;
+}
 
 /*ボディー*/
 body{
@@ -140,7 +162,7 @@ body{
 }
 
 .function{
-    display: flex;
+  display: flex;
 }
 
 #start{
@@ -157,7 +179,7 @@ body{
 }
 
 .btn{
-    width: 50%;
+  width: 50%;
 }
 
 .btn--orange {
@@ -166,11 +188,12 @@ body{
   float:right;
 }
 .btn--radius {
-   border-radius: 100vh;
+  border-radius: 100vh;
 }
 
 .easy-record{
-    display: flex;
-    flex-wrap: wrap;
-    width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  float: right;
 }
