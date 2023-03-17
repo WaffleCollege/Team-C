@@ -165,6 +165,42 @@ body{
   display: flex;
 }
 
+.expected-date{
+  margin-left: 265px;
+}
+
+.date-display{
+  background: #F2F1E9;
+  border: #F2F1E9;
+  color: #064025;
+  font-size: 25px;
+  font-weight: bold;
+  height: 40px;
+  width: 50%;
+  border-radius: 100vh;
+  margin-left: 265px;
+  margin-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 75px;
+}
+
+.record{
+  margin-left: 525px;
+}
+
+.easy-record{
+  margin-left: -200px;
+}
+
+.buttons{
+  width: 50%;
+  color: #F2F1E9;
+  border: none;
+  float:right;
+  border-radius: 100vh;
+}
+
 #start{
   background-color: #79A637;
 }
@@ -172,28 +208,8 @@ body{
   background-color: #79A637;
 }
 #physical-condition-record{
-  background-color: #5190a4;
+  background-color: #5190A4;
 }
 #share{
-  background-color: #5190a4;
-}
-
-.btn{
-  width: 50%;
-}
-
-.btn--orange {
-  color: #fff;
-  border: none;
-  float:right;
-}
-.btn--radius {
-  border-radius: 100vh;
-}
-
-.easy-record{
-  display: flex;
-  flex-wrap: wrap;
-  width: 200px;
-  float: right;
+  background-color: #5190A4;
 }
