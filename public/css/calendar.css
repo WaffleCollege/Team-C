@@ -148,11 +148,12 @@ ul{
 .header-logo{
     font-family: "sans-serif";
     text-decoration: none;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     color: #A7D9D0;
     float: left;
     padding-left: 20px;
+    white-space: nowrap;
 }
 
 /*ボディー*/
