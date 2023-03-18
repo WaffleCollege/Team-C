@@ -127,8 +127,9 @@ ul{
 }
 
 .header-list{
-  margin-left: 700px;
+  margin-left: 500px;
   margin-top: -15px;
+  white-space: nowrap;
 }
 
 #login{
@@ -222,4 +223,11 @@ body{
   background-color: #5190A4;
   height: 40px;
   width: 185px;
+}
+
+.welcome-message{
+  color: #F2F1E9;
+  white-space: nowrap;
+  margin-left: 20px;
+  margin-top: 25px;
 }
