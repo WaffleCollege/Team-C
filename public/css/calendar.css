@@ -200,25 +200,26 @@ body{
 
 .easy-record-button{
   display: flex;
+  flex-flow:column;
 }
 
 #start{
   background-color: #79A637;
-  height: 20px;
+  height: 40px;
   width: 150px;
 }
 #end{
   background-color: #79A637;
-  height: 20px;
+  height: 40px;
   width: 150px;
 }
 #physical-condition-record{
   background-color: #5190A4;
-  height: 20px;
+  height: 40px;
   width: 150px;
 }
 #share{
   background-color: #5190A4;
-  height: 20px;
+  height: 40px;
   width: 150px;
 }
