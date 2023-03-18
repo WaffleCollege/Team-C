@@ -9,16 +9,18 @@
   <body>
     <div class="sign">
       <div class="container">
-        <h1><a href="/">Period Checker</a></h1>
-        <div class="panel">
-          <h2>ログイン</h2>
+        <div class="header">
+          <h1><a href="/" class="header-logo">Period Checker</a></h1>
+        </div>
+          <div class="panel">
+          <h2 class="login-text">ログイン</h2>
           <form action="/login" method="post">
-            <p>メールアドレス</p>
-            <input type="text" name="email">
-            <p>パスワード</p>
-            <input type="password" name="password">
-            <input type="submit" value="ログイン">
-            <a href="/">トップにもどる</a>
+            <p class="mail-address-text">メールアドレス</p>
+            <input type="text" name="email" class="mail-address-type">
+            <p class="password-text">パスワード</p>
+            <input type="password" name="password" class="password-type">
+            <input type="submit" value="ログイン" class="login-button">
+            <a href="/" class="back">トップにもどる</a>
           </form>
         </div>
       </div>
