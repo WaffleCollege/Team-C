@@ -153,6 +153,7 @@ ul{
     color: #A7D9D0;
     float: left;
     padding-left: 20px;
+    white-space: nowrap;
 }
 
 /*ボディー*/
@@ -176,7 +177,7 @@ body{
   font-size: 25px;
   font-weight: bold;
   height: 40px;
-  width: 50%;
+  width: 300px;
   border-radius: 100vh;
   margin-left: 265px;
   margin-right: 50px;
@@ -186,11 +187,7 @@ body{
 }
 
 .record{
-  margin-left: 525px;
-}
-
-.easy-record{
-  margin-left: -200px;
+  margin-left: 200px;
 }
 
 .buttons{
@@ -201,15 +198,28 @@ body{
   border-radius: 100vh;
 }
 
+.easy-record-button{
+  display: flex;
+  flex-flow:column;
+}
+
 #start{
   background-color: #79A637;
+  height: 40px;
+  width: 185px;
 }
 #end{
   background-color: #79A637;
+  height: 40px;
+  width: 185px;
 }
 #physical-condition-record{
   background-color: #5190A4;
+  height: 40px;
+  width: 185px;
 }
 #share{
   background-color: #5190A4;
+  height: 40px;
+  width: 185px;
 }
