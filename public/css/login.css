@@ -1,0 +1,71 @@
+.header{
+    background-color: #064025;
+    display: flex;
+    height: 80px;
+}
+
+.header-logo{
+    font-family: "sans-serif";
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    color: #A7D9D0;
+    float: left;
+    padding-left: 20px;
+    white-space: nowrap;
+    padding-top: 10px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+body{
+  margin: 0px;
+  background-color: #A7D9D0;  
+}
+
+.login-text{
+  font-size: 30px;
+  font-family: "sans-serif";
+  color: #064025;
+  padding-left: 20px;
+}
+
+.mail-address-text{
+  font-size: 20px;
+  color: #064025;
+  padding-left: 20px;
+}
+
+.mail-address-type{
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 60px;
+}
+
+.password-text{
+  font-size: 20px;
+  color: #064025;
+  padding-left: 20px;
+}
+
+.password-type{
+  margin-left: 20px;
+  padding-left: 60px;
+}
+
+.login-button{
+  margin-left: 35px;
+  margin-right: 20px;
+  font-weight: bold;
+  height: 40px;
+  width: 150px;
+  background-color: #f2f1e9;
+  color: #064025;
+  border: none;
+  border-radius: 100vh;
+}
+
+.back{
+  color: #064025;
+}
